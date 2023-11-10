@@ -1,0 +1,11 @@
+<div *ngIf="form" [formGroup]="form" fxLayout="column">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" placeholder="Enter name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>PLZ</mat-label>
+    <input matInput formControlName="PLZ" placeholder="Enter PLZ">   
+  </mat-form-field>
+</div>
+

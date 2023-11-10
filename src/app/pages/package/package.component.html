@@ -1,0 +1,23 @@
+<mat-form-field class="filter">
+  <mat-label>Search by ID</mat-label>
+  <input matInput [formControl]="idFilter">
+</mat-form-field>
+
+<mat-form-field class="filter">
+  <mat-label>Search by status</mat-label>
+  <input matInput [formControl]="deliveredFilter">
+</mat-form-field>
+
+<mat-form-field class="filter">
+  <mat-label>Search by post office</mat-label>
+  <input matInput [formControl]="officeNameFilter">
+</mat-form-field>
+
+<mat-form-field class="filter">
+  <mat-label>Search by weight</mat-label>
+  <input matInput [formControl]="weightFilter">
+</mat-form-field>
+
+<app-dynamic-table [rowData]="dataSource" [paginationConfig]="tablePaginationSettings"
+  [columnDefinition]="columnDefinition">
+</app-dynamic-table>

@@ -1,0 +1,42 @@
+.mat-column-select {
+    overflow: visible;
+}
+
+::ng-deep .mat-sort-header-container {
+    align-items: center;
+}
+
+.highlight {
+    background: #87cefa;
+}
+
+.column-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-align {
+    margin: 0 5px 0 5px;
+    font-size: 22px;
+}
+
+.table-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+.table-container .mat-table {
+    overflow: auto;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.table-container .mat-table .mat-header-row {
+    position: absolute;
+    width: -webkit-fill-available;
+    top: -57px;
+    left: 0px;
+    right: 18px;
+    background: #fff;
+}

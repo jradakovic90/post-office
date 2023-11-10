@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+}
+
+mat-form-field.mat-form-field {
+  width: 30%;
+  margin-left: 400px;
+}
+
+mat-paginator {
+  margin-right: 700px;
+}
+
+.mat-cell {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-left: 1px solid #eee;
+}
+
+.mat-header {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-left: 1px solid #eee;
+}
+
+.filter {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+}

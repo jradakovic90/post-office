@@ -1,0 +1,4 @@
+<button mat-button color="primary" (click)="addPostOffice()">Add new Post Office</button>
+<app-dynamic-table [rowData]="dataSource" [paginationConfig]="tablePaginationSettings"
+    [columnDefinition]="columnDefinition" [canEdit]="true" [canDelete]="true" (isActionClicked)="applyAction($event)">
+</app-dynamic-table>

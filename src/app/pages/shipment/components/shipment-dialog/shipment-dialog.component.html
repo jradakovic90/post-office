@@ -1,0 +1,50 @@
+<div *ngIf="form" [formGroup]="form" fxLayout="column">
+  <mat-form-field>
+    <mat-label>Type</mat-label>
+    <mat-select formControlName="type">
+      <mat-option *ngFor="let type of types" [value]="type">
+        {{ type.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Origin</mat-label>
+    <mat-select formControlName="origin">
+      <mat-option *ngFor="let status of statuses" [value]="status">
+        {{ status }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Destination</mat-label>
+    <mat-select formControlName="destination">
+      <mat-option *ngFor="let status of statuses" [value]="status">
+        {{ status }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Delivered</mat-label>
+    <mat-select formControlName="delivered">
+      <mat-option *ngFor="let status of statuses" [value]="status">
+        {{ status }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Weight</mat-label>
+    <mat-select formControlName="weight">
+      <mat-option *ngFor="let weight of weights" [value]="weight">
+        {{ weight.desc }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Office</mat-label>
+    <mat-select formControlName="office">
+      <mat-option *ngFor="let office of offices" [value]="office">
+        {{ office.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
